@@ -1,6 +1,6 @@
 # UIImage-Teeny
 
-Provide method for UIImage to be able to load images with the -568h prefix.
+Provide method for UIImage to be able to load images with the -568h postfix.
 
 ## Installation
 
