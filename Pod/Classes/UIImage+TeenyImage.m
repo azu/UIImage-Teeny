@@ -27,10 +27,11 @@ static BOOL TeenyImage_calculatedScreenSize = NO;
         NSString *imageExtension = [name pathExtension];
         NSString *imageNameWithoutExtension = [name stringByDeletingPathExtension];
         NSString *tallerImageName = [imageNameWithoutExtension stringByAppendingString:@"-568h"];
-        if (imageExtension.length > 0) {
-            tallerImageName = [tallerImageName stringByAppendingPathExtension:imageExtension];
-        }
-        NSString *imagePath = [[NSBundle mainBundle] pathForResource:tallerImageName ofType:@"png"];
+        NSString *filePath = [NSString stringWithFormat:@"%@@2x.%@",
+                                                        tallerImageName,
+                                                        imageExtension ?: @""
+        ];
+        NSString *imagePath = [[NSBundle mainBundle] pathForResource:filePath ofType:nil];
         if (imagePath) {
             return tallerImageName;
         }
