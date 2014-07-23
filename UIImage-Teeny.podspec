@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "UIImage-Teeny"
   s.version          = "0.1.0"
-  s.summary          = "Provide method for UIImage to be able to load images with the -568h prefix."
+  s.summary          = "Provide method for UIImage to be able to load images with the -568h postfix."
   s.homepage         = "https://github.com/azu/UIImage-Teeny"
   s.license          = 'MIT'
   s.author           = {"azu" => "azuciao@gmail.com"}
