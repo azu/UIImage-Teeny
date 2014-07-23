@@ -1,28 +1,33 @@
 # UIImage-Teeny
 
-[![CI Status](http://img.shields.io/travis/azu/UIImage-Teeny.svg?style=flat)](https://travis-ci.org/azu/UIImage-Teeny)
-[![Version](https://img.shields.io/cocoapods/v/UIImage-Teeny.svg?style=flat)](http://cocoadocs.org/docsets/UIImage-Teeny)
-[![License](https://img.shields.io/cocoapods/l/UIImage-Teeny.svg?style=flat)](http://cocoadocs.org/docsets/UIImage-Teeny)
-[![Platform](https://img.shields.io/cocoapods/p/UIImage-Teeny.svg?style=flat)](http://cocoadocs.org/docsets/UIImage-Teeny)
-
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+Provide method for UIImage to be able to load images with the -568h prefix.
 
 ## Installation
 
-UIImage-Teeny is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+```
+pod 'UIImage-Teeny'
+```
 
-    pod "UIImage-Teeny"
+## Usage
 
-## Author
+You should prepare images.
 
-azu, azuciao@gmail.com
+1. MyImage.png 
+2. MyImage@2x.png 
+3. MyImage-568h@2x.png
+
+``` objc
+[UIImage teenyImagedNamed:@"MyImage.png"];
+```
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
 
 ## License
 
-UIImage-Teeny is available under the MIT license. See the LICENSE file for more info.
-
+MIT
