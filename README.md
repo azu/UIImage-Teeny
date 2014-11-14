@@ -18,6 +18,9 @@ You should prepare images.
 
 ``` objc
 [UIImage teenyImagedNamed:@"MyImage.png"];
+//1.  if found MyImage-568h@2x.png
+//2.  if found MyImage@2x.png
+//3.  if found MyImage.png
 ```
 
 ## Contributing
